@@ -14,7 +14,7 @@
     <header class="top-app-bar">
         <nav class="container">
             <input type="checkbox" id="menu" class="container__button">
-            <label for="menu">
+            <label for="menu" class="container__button-menu">
                 <span class="top-app-bar__menu container__image"></span>
             </label>
             <ul class="lista-menu">
@@ -25,10 +25,29 @@
                 <li class="lista-menu__item"><a href="#" class="lista-menu__link">Business</a></li>
                 <li class="lista-menu__item"><a href="#" class="lista-menu__link">Design & UX</a></li>
             </ul>
-            <img src="/assets/Logo.svg" alt="Logo da Alurabooks">
+            <div class="container__logo">
+                <img src="/assets/Logo.svg" alt="Logo da Alurabooks" class="logo__imagem">
+                <h2 class="logo__titulo-negrito">Alura</h2>
+                <h2 class="logo__titulo">Books</h2>
+            </div>
+        </nav>
+        <nav class="container-opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__button">
+            <label for="opcoes-menu">
+                <span class="container-opcoes__item">Categorias</span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Programação</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Front-End</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Infraestrutura</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Business</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Design & UX</a></li>
+            </ul>
+            <a href="#" class="container-opcoes__link">Favoritos</a>
+            <a href="#" class="container-opcoes__link">Minha Estante</a>
         </nav>
         <nav class="container">
-            <a href="#"><img src="./assets/Favoritos.svg" alt="Ícone de favoritos" class="container__image"></a>
+            <a href="#"><img src="./assets/Favoritos.svg" alt="Ícone de favoritos" class="container__image container__image-favoritos"></a>
             <a href="#"><img src="./assets/Compras.svg" alt="Ícone de compras" class="container__image"></a>
             <a href="#"><img src="./assets/Usuário.svg" alt="Ícone do perfil do usuário" class="container__image"></a>
         </nav>
@@ -154,8 +173,8 @@
 
     </main>
 
-    <footer>
-        <img src="./assets/Alura.png" alt="">
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo Alura</h2>
     </footer>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

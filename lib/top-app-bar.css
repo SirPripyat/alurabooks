@@ -24,6 +24,10 @@ label {
     height: 48px;
 }
 
+.container-tablet {
+    display: none;
+}
+
 /* Container dos icones */
 
 .container {
@@ -39,11 +43,33 @@ label {
     height: 48px;
 }
 
+.container__logo {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__imagem {
+    width: 48px;
+    height: 48px;
+}
+
+.logo__titulo, 
+.logo__titulo-negrito {
+    display: none;
+}
+
 .container__image {
     width: 48px;
     height: 48px;
 }
 
+.container-opcoes {
+    display: none;
+}
 
 /* Menu Dropwdown */
 
@@ -65,8 +91,7 @@ label {
     width: 60vw;
 
     text-align: left;
-}
-
+}xw
 
 .lista-menu__titulo {
     padding: 24px 24px 8px 24px;
@@ -90,4 +115,105 @@ label {
     text-fill-color: transparent;
 
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container {
+        column-gap: 24px;
+    }
+
+    .container__button-menu {
+        display: none;
+    }
+
+    .top-app-bar__menu {
+        display: none;
+    }
+
+    .container__logo {
+        width: auto;
+        height: 48px;
+
+        align-items: flex-end;
+    }
+
+    .logo__titulo,
+    .logo__titulo-negrito {
+        display: flex;
+        justify-content: flex-end;
+
+        font-family: var(--logo-font);
+        font-size: 28px;
+        line-height: 42px;
+
+        color: var(--black);
+    }
+
+    .logo__titulo-negrito {
+        font-weight: 700;
+        margin-left: 12px;
+    }
+   
+    .logo__titulo {
+        font-weight: 400;
+    }
+
+    .container__image-favoritos {
+        display: none;
+    }
+
+    .container-opcoes {
+        display: flex;
+        column-gap: 24px;
+    }
+
+    .opcoes__button {
+        display: none;
+    }
+
+    label {
+        height: 40px;
+    }
+
+    .container-opcoes__item {
+        display: flex;
+        align-items: center;
+        padding: 8px 32px 8px 8px;
+
+        font-weight: 400;
+        text-decoration-line: none;
+        text-transform: uppercase;
+        color: var(--black);
+    }
+
+    .container-opcoes__link {
+        display: flex;
+        align-items: center;
+        padding: 8px 32px 8px 8px;
+
+        font-weight: 400;
+        text-decoration-line: none;
+        text-transform: uppercase;
+        color: var(--black);
+    }
+
+    .opcoes__button:checked ~ .lista-menu {
+        display: block;
+        width: auto;
+        z-index: 99;
+    }
+
+
+    .lista-menu {
+        background-color: var(--white);
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: auto;
+        width: 60vw;
+    
+        text-align: left;
+    }
+
 }
