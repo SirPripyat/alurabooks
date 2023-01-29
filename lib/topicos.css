@@ -1,0 +1,22 @@
+.topicos {
+    padding: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    background: linear-gradient(var(--branding));
+}
+
+.topicos__titulo {
+    color: var(--white);
+
+    font-weight: 300;
+}
+
+.topicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}

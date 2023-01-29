@@ -1,0 +1,39 @@
+/* Importações de arquivos */
+
+@import url("./lib/top-app-bar.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
+@import url('./lib/banner.css');
+@import url('./lib/carrossel.css');
+@import url('./lib/buttons.css');
+@import url('./lib/topicos.css');
+@import url('./lib/contato.css');
+
+/* Variáveis */
+
+:root {
+    --background : #EBECEE;
+    --branding: 97.54deg, #002F52 35.49%, #326589 165.37%;
+    --blue: #002F52;
+    --yellow-00: #EB9B00;
+    --yellow-50: #B87900;
+
+    --grey: #C4C4C4;
+    --white: #FFFFFF;
+    --black: #000000D9;
+
+    --main-font: 'Poppins';
+
+    --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Estruturando projeto */
+
+body {
+    background-color: var(--background);
+
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--blue);
+}        
