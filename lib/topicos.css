@@ -20,3 +20,22 @@
     justify-content: center;
     gap: 16px;
 }
+
+/* Tablet */ 
+
+@media screen and (min-width: 1024px) {
+    
+    .topicos {
+        padding: 24px 120px;
+    }
+
+    .topicos__titulo {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .topicos__lista {
+        gap: 24px;
+    }
+
+}

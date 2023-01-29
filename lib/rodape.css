@@ -9,3 +9,54 @@
     font-weight: 400;
     color: var(--black);
 }
+
+.rodape__lista-empresas {
+    display: none;
+}
+
+.lista-empresas__titulo {
+    font-weight: 400;
+    text-transform: uppercase;
+
+    color: var(--grey-50);
+}
+
+.lista-empresas__item {
+    display: flex;
+    column-gap: 8px;
+
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item__logo {
+    width: 32px;
+    height: 32px;
+}
+
+.item__texto {
+    font-weight: 400;
+    color: var(--grey-100);
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .rodape {
+        padding: 56px 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rodape__titulo {
+        font-size: 24px;
+        line-height: 36px;
+
+    }
+
+    .rodape__lista-empresas {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+}

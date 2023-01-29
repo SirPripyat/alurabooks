@@ -45,3 +45,33 @@
 
     color: var(--blue);
 }
+
+
+@media screen and (min-width: 1024px) {
+    
+    .contato {
+        padding: 56px 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 32px;
+    }
+
+    .contato__container {
+        display: flex;
+        flex-direction: column;
+        width: calc(30% - 16px);
+    }
+
+    .contato__descricao {
+        margin: 0;
+    }
+
+    .contato__input {
+        width: calc(30% - 16px);
+    }
+
+    label {
+        display: none;
+    }
+}

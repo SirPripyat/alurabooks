@@ -113,3 +113,46 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+/* Tablet */
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        font-size: 26px;
+        line-height: 39px;
+    
+        padding: 48px 0 16px 0;
+    
+    }
+
+    .swiper-pagination {
+        margin: 32px 0 0 0;
+    }
+
+    .swiper {
+        width: 70%;
+    }
+
+    .swiper-wrapper {
+        margin: 64px 32px;
+        width: calc(100% - 64px);
+        text-align: center;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        top: 55%;
+
+        color: var(--blue);
+
+    }
+
+    .card {
+        width: 45%;
+        margin: 0 auto 48px auto ;
+
+        padding: 24px
+    }
+
+}
