@@ -48,8 +48,14 @@
         </nav>
         <nav class="container">
             <a href="#"><img src="./assets/Favoritos.svg" alt="Ícone de favoritos" class="container__image container__image-favoritos"></a>
-            <a href="#"><img src="./assets/Compras.svg" alt="Ícone de compras" class="container__image"></a>
-            <a href="#"><img src="./assets/Usuário.svg" alt="Ícone do perfil do usuário" class="container__image"></a>
+            <div class="container__icon">
+                <img src="./assets/Compras.svg" alt="Ícone de compras" class="container__image">
+                <h2 class="icon__texto">Minha sacola</h2>
+            </div>
+            <div class="container__icon">
+                <img src="./assets/Usuário.svg" alt="Ícone do perfil do usuário" class="container__image">
+                <h2 class="icon__texto">Meu perfil</h2>
+            </div>
         </nav>
     </header>
     
@@ -64,74 +70,76 @@
 
         <section class="carrossel">
             <h2 class="carrossel__titulo">Últimos lançamentos</h2>
-            <!-- Slider main container -->
-            <div class="swiper">
-                <div class="swiper-pagination"></div>
+            <section class="carrossel__container">
+                <div class="swiper">
+                    <div class="swiper-pagination"></div>
 
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="./assets/ApacheKafka.png" alt="Livro sobre Apache Kafka e Spring Boot"></div>
-                    <div class="swiper-slide"><img src="./assets/Liderança.png" alt="Livro sobre Liderança em design" ></div>
-                    <div class="swiper-slide"><img src="./assets/Javascript.png" alt="Livro sobre Javascript"></div>
-                    <div class="swiper-slide"><img src="./assets/Guia Front-end.png" alt="Livro sobre Guia de Front-End"></div>
-                    <div class="swiper-slide"><img src="./assets/Portugol.png" alt="Livro sobre Portugol"></div>
-                </div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./assets/ApacheKafka.png" alt="Livro sobre Apache Kafka e Spring Boot"></div>
+                        <div class="swiper-slide"><img src="./assets/Liderança.png" alt="Livro sobre Liderança em design" ></div>
+                        <div class="swiper-slide"><img src="./assets/Javascript.png" alt="Livro sobre Javascript"></div>
+                        <div class="swiper-slide"><img src="./assets/Guia Front-end.png" alt="Livro sobre Guia de Front-End"></div>
+                        <div class="swiper-slide"><img src="./assets/Portugol.png" alt="Livro sobre Portugol"></div>
+                    </div>
 
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </section>
-        <section class="card">
-            <div class="card__coluna-1">
-                <div class="coluna-1__container-texto">
-                    <h5 class="container-texto__subtitulo">Você pode gostar</h5>
-                    <h4 class="container-texto__titulo">Angular 11 e Firebase</h4>
-                    <p class="container-texto__descricao">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <div class="coluna-1__buttons">
-                    <img src="./assets/Favoritos.svg" alt="Ícone de Favoritar" class="buttons__icon">
-                    <img src="./assets/Compras.svg" alt="Ícone de sacola" class="buttons__icon">
+                <div class="card">
+                    <div class="card__coluna-1">
+                        <div class="coluna-1__container-texto">
+                            <h5 class="container-texto__subtitulo">Você pode gostar</h5>
+                            <h4 class="container-texto__titulo">Angular 11 e Firebase</h4>
+                            <p class="container-texto__descricao">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                        </div>
+                        <div class="coluna-1__buttons">
+                            <img src="./assets/Favoritos.svg" alt="Ícone de Favoritar" class="buttons__icon">
+                            <img src="./assets/Compras.svg" alt="Ícone de sacola" class="buttons__icon">
+                        </div>
+                    </div>
+                    <div class="card__coluna-2">
+                        <img src="./assets/Angular-1.png" alt="Thumbnail do livro de Angular" class="coluna-2__image" style="border-radius: 8px;">
+                        <button class="button-small">Saiba mais</button>
+                    </div>
                 </div>
-            </div>
-            <div class="card__coluna-2">
-                <img src="./assets/Angular-1.png" alt="Thumbnail do livro de Angular" class="coluna-2__image" style="border-radius: 8px;">
-                <button class="button-small">Saiba mais</button>
-            </div>
+            </section>
         </section>
 
         <section class="carrossel">
             <h2 class="carrossel__titulo">Mais vendidos</h2>
-            <!-- Slider main container -->
-            <div class="swiper">
-                <div class="swiper-pagination"></div>
+            <section class="carrossel__container">
+                <div class="swiper">
+                    <div class="swiper-pagination"></div>
 
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="./assets/ApacheKafka.png" alt="Livro sobre Apache Kafka e Spring Boot"></div>
-                    <div class="swiper-slide"><img src="./assets/Liderança.png" alt="Livro sobre Liderança em design" ></div>
-                    <div class="swiper-slide"><img src="./assets/Javascript.png" alt="Livro sobre Javascript"></div>
-                    <div class="swiper-slide"><img src="./assets/Guia Front-end.png" alt="Livro sobre Guia de Front-End"></div>
-                    <div class="swiper-slide"><img src="./assets/Portugol.png" alt="Livro sobre Portugol"></div>
-                </div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./assets/ApacheKafka.png" alt="Livro sobre Apache Kafka e Spring Boot"></div>
+                        <div class="swiper-slide"><img src="./assets/Liderança.png" alt="Livro sobre Liderança em design" ></div>
+                        <div class="swiper-slide"><img src="./assets/Javascript.png" alt="Livro sobre Javascript"></div>
+                        <div class="swiper-slide"><img src="./assets/Guia Front-end.png" alt="Livro sobre Guia de Front-End"></div>
+                        <div class="swiper-slide"><img src="./assets/Portugol.png" alt="Livro sobre Portugol"></div>
+                    </div>
 
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </section>
-        <section class="card">
-            <div class="card__coluna-1">
-                <div class="coluna-1__container-texto">
-                    <img src="./assets/Estrelinhas.png" alt="Avaliação da autora" class="coluna-1__image">
-                    <h5 class="container-texto__subtitulo">Autora do Mês</h5>
-                    <h4 class="container-texto__titulo">Juliana Agarikov</h4>
-                    <p class="container-texto__descricao">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <img src="./assets/Favoritos.svg" alt="Ícone de Favoritar" class="buttons__icon">
-            </div>
-            <div class="card__coluna-2">
-                <img src="./assets/Perfil-escritora 1.png" alt="Autora em destaque" class="coluna-2__image" style="border-radius: 8px;">
-                <button class="button-small">Saiba mais</button>
-            </div>
+                <div class="card">
+                    <div class="card__coluna-1">
+                        <div class="coluna-1__container-texto">
+                            <img src="./assets/Estrelinhas.png" alt="Avaliação da autora" class="coluna-1__image">
+                            <h5 class="container-texto__subtitulo">Autora do Mês</h5>
+                            <h4 class="container-texto__titulo">Juliana Agarikov</h4>
+                            <p class="container-texto__descricao">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                        </div>
+                        <img src="./assets/Favoritos.svg" alt="Ícone de Favoritar" class="buttons__icon">
+                    </div>
+                    <div class="card__coluna-2">
+                        <img src="./assets/Perfil-escritora 1.png" alt="Autora em destaque" class="coluna-2__image" style="border-radius: 8px;">
+                        <button class="button-small">Saiba mais</button>
+                    </div>
+                </div>
+            </section>
         </section>
 
         <section class="topicos">
@@ -170,7 +178,7 @@
                 <p class="contato__descricao">Atualizações de e-books, novos livros, promoções e outros.</p>
             </div>
             <input type="email" id="e-mail" placeholder="Cadastre seu e-mail" class="contato__input">
-            <label for="e-mail"></label>
+            <label for="e-mail" class="contato__label"></label>
         </section>
 
     </main>

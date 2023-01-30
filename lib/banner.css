@@ -79,3 +79,24 @@
     }
 
 }
+
+/* Desktop */
+
+@media screen and (min-width: 1728px) {
+    .banner {
+        width: calc(100% - 480px - 480px);
+        padding: 80px 480px
+    }
+
+    .banner__pesquisa {
+        padding: 0 0 0 264px;
+
+        height: 56px;
+        background-position: 228px;
+    }
+
+    .banner__pesquisa::placeholder {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}

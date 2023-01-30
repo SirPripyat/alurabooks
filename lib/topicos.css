@@ -1,9 +1,11 @@
 .topicos {
     padding: 24px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     row-gap: 24px;
+
+    text-align: center;
+    align-items: center;
 
     background: linear-gradient(var(--branding));
 }
@@ -36,6 +38,24 @@
 
     .topicos__lista {
         gap: 24px;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+
+    .topicos {
+        padding: 64px 170px;
+
+    }
+
+    .topicos__titulo {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .topicos__lista {
+        width: 55%
     }
 
 }

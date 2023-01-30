@@ -60,3 +60,17 @@
         row-gap: 24px;
     }
 }
+
+
+@media screen and (min-width: 1728px) {
+
+    .rodape {
+        padding: 56px 200px
+    }
+
+    .rodape__lista-empresas {
+        padding-left: 24px;
+
+        border-left: 1px solid var(--black);
+    }
+}
